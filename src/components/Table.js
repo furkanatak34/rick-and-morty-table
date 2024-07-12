@@ -30,8 +30,11 @@ const Table = ({ data, currentPage, pageSize }) => {
                                     <div><strong style={{ color: 'black' }}>Name:</strong> {character.name}</div>
                                     <div><strong style={{ color: 'black' }}>Status:</strong> {character.status}</div>
                                     <div><strong style={{ color: 'black' }}>Species:</strong> {character.species}</div>
-                                </div>
-                            </div>
+                                    </div>
+                                    <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end', height: '165px',padding:'15px' }}>
+                                        <label style={{ color: 'black' }}>Click for more info</label>
+                                            </div>
+                                 </div>
                             {array[index + 1] && (
                                 <div className="column" onClick={() => handleRowClick(array[index + 1])}>
                                     <img src={array[index + 1].image} alt={array[index + 1].name} width="50" height="50" />
@@ -41,7 +44,11 @@ const Table = ({ data, currentPage, pageSize }) => {
                                         <div><strong style={{ color: 'black' }}>Status:</strong> {array[index + 1].status}</div>
                                         <div><strong style={{ color: 'black' }}>Species:</strong> {array[index + 1].species}</div>
                                     </div>
+                                    <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end', height: '165px',padding:'15px' }}>
+                                        <label style={{ color: 'black' }}>Click for more info</label>
+                                            </div>
                                 </div>
+                                
                             )}
                         </div>
                     );

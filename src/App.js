@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Filter from './components/Filter';
 import Table from './components/Table';
 import Pagination from './components/Pagination';
-import CharacterDetails from './components/CharacterDetails';
 import './App.css';
+import CharacterDetails from './components/CharacterDetails';
 
 const App = () => {
     const [data, setData] = useState([]);
@@ -76,7 +76,7 @@ const App = () => {
     return (
         <Router>
             <div className="App">
-                <h1>Rick and Morty Characters</h1>
+                <h1 className='Title'>Rick and Morty Characters</h1>
                 {error && <div className="error">{error}</div>}
                 <Routes>
                     <Route 
